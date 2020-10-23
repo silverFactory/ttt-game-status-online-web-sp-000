@@ -29,7 +29,7 @@ count = 0
     end
   #if all x or y then game over (break)
   if board_array == ["X", "X", "X"] || board_array == ["Y", "Y", "Y"]
-    return win_array
+    return WIN_COMBINATIONS[count]
   else
     #else reset board_array and increase count and try again
       board_array = []
