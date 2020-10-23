@@ -38,10 +38,10 @@ count = 0
 end
 
 def full?(board)
-  emptys? = board.detect do |index|
+  emptys = board.detect do |index|
            index == "" || index == " "
          end
-  if emptys? != nil
+  if emptys != nil
     return false
   else
     return true
