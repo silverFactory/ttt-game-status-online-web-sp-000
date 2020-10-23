@@ -18,7 +18,7 @@ WIN_COMBINATIONS = [
 
 def won?(board)
 count = 0
-  until count >= 7 do
+  until count > 7 do
   #use count as a selecter for index of WIN_COMBINATIONS
    win_array = WIN_COMBINATIONS[count]
    board_array = []
