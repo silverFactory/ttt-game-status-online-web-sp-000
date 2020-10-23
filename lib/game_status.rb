@@ -34,7 +34,9 @@ count = 0
       board_array = []
       count += 1
   end
-
   end
+end
+
+def full?(board)
 
 end
