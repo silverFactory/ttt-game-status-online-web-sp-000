@@ -38,7 +38,12 @@ count = 0
 end
 
 def full?(board)
- board.detect do |index|
-   index == "X" || index == "O"
- end
+  emptys? = board.detect do |index|
+           index == "" || index == " "
+         end
+  if emptys?.length > 0
+    return false
+  else
+    return true
+  end
 end
