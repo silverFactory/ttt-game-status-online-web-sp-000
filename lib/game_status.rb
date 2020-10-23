@@ -41,7 +41,7 @@ def full?(board)
   emptys? = board.detect do |index|
            index == "" || index == " "
          end
-  if emptys?.length > 0
+  if emptys?.length != nil
     return false
   else
     return true
