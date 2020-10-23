@@ -38,5 +38,7 @@ count = 0
 end
 
 def full?(board)
-
+ board.detect do |index|
+   index == "X" || index == "O"
+ end
 end
