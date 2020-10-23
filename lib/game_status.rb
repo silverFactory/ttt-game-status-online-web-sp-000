@@ -14,8 +14,7 @@ WIN_COMBINATIONS = [
   [0, 4, 8],
   [2, 4, 6]
 ]
-all_x = ["X", "X", "X"]
-all_y = ["Y", "Y", "Y"]
+
 
 def won?(board)
 count = 0
@@ -27,8 +26,8 @@ count = 0
     win_array.each do |index|
       board_array << board[index]
     end
-  #if all x or y then game over (break)
-  if board_array == ["X", "X", "X"] || board_array == ["Y", "Y", "Y"]
+  #if all x or o then game over (break)
+  if board_array == ["X", "X", "X"] || board_array == ["O", "O", "O"]
     return win_array
   else
     #else reset board_array and increase count and try again
