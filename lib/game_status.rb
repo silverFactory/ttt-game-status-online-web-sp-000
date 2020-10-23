@@ -28,7 +28,7 @@ count = 0
       board_array << board[index]
     end
   #if all x or y then game over (break)
-  if board_array == all_x || board_array == all_y
+  if board_array == ["X", "X", "X"] || board_array == ["Y", "Y", "Y"]
     return win_array
   else
     #else reset board_array and increase count and try again
